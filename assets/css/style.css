@@ -13,15 +13,24 @@
     box-sizing: border-box;
 }
 
-
 body {
     background: var(--background);
 }
 
-p, label, input, a {
+ul {
+    list-style: none;
+}
+
+p, label, a, span {
     color: var(--text);
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
+}
+
+input {
+    color: var(--text);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
 }
 
 a {
@@ -37,7 +46,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 50rem;
+    max-width: 40rem;
     margin: 2rem auto 5rem auto;
 }
 
@@ -47,10 +56,20 @@ a:hover {
 }
 
 .header .switch {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 1rem;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.header .switch:hover {
+    filter: drop-shadow(1px 1px 2px var(--second-color));
+}
+
+.header .switch.active {
+    filter: drop-shadow(1px 1px 2px var(--second-color));
+}
+
+.header .switch.active:hover {
+    filter: none;
 }
 
 main {
@@ -58,7 +77,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 50rem;
+    max-width: 40rem;
     margin: 0 auto;
 }
 
@@ -67,8 +86,8 @@ main {
 }
 
 .title .logo svg{
-    width: 17.5rem;
-    height: 4rem;
+    max-width: 17.5rem;
+    max-height: 4rem;
 }
 
 .title p {
@@ -81,20 +100,20 @@ main {
     margin-bottom: 2.5rem;
 }
 
-.form {
+.form { 
     padding: 3.6rem 2.5rem;
-    width: 50rem;
+    width: 40rem;
     background: var(--background-section);
     border-radius: .625rem;
 }
 
-.form .item-list-number {
+.form .item-list  {
     display: flex;
     flex-direction: column;
     margin-bottom: 2.5rem;
 }
 
-.form .item-list-number label, .form .item-list-radio p  {
+.form .item-list label, .form .item-list-radio p  {
     margin-bottom: 1rem;
 }
 
@@ -109,7 +128,7 @@ main {
     border: 1px solid transparent;
 }
 
-[type="number"]:focus {
+[type="number"]:focus, [type="text"]:focus {
     border: 1px solid var(--primary-color);
 }
 
@@ -128,6 +147,12 @@ main {
     cursor: pointer;
 }
 
+.form .item-list-radio .radio label {
+    color: var(--text);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+}
+
 [type="radio"] {
     appearance: none;
     display: flex;
@@ -141,8 +166,6 @@ main {
     position: relative;
     outline: none;
     cursor: pointer;
-    
-
 }
 
 [type="radio"]::before {
@@ -164,11 +187,67 @@ main {
     border: 1px solid var(--primary-color);
 }
 
+[type="text"] {  
+    width: 20rem;
+    background: var(--background);
+    border: none;
+    padding: .5rem;
+    border-radius: 3.125rem;
+    text-align: center;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+.add-others {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    border: none;
+    background: var(--primary-color);
+    color: var(--text);
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1rem;
+    transition: .2s ease-in-out;
+}
+
+.add-others:hover {
+    background: var(--second-color);
+}
+
+.item-others {
+    display: none;
+}
+
+.calc {
+    display: block;
+    margin: 0 auto;
+    width: 15rem;
+    height: 4rem;
+    border-radius: .625rem;
+    border: none;
+    background: var(--primary-color);
+    font-size: 1.25rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--text);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.calc:hover {
+    background: var(--second-color);
+}
+
 footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 50rem;
+    width: 40rem;
     margin: 5rem auto 1rem;
 }
 
@@ -188,4 +267,120 @@ footer .mkl {
 
 footer .mkl p, a {
     font-size: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+    .header, main, .form, footer {
+        width: 20rem;
+    }
+
+    p, label, a, span {
+        font-size: 1rem;
+    }
+    
+    input {
+        font-size: .875rem;
+    }
+
+    .header {
+        margin: 1rem auto 2.5rem auto;
+    }
+
+    .header .logo svg {
+        width: 7rem;
+    }
+
+    .title {
+        margin-bottom: 4rem;
+    }
+
+    .title p {
+        font-size: .875rem;
+    }
+    
+    .paragraph {
+        margin-bottom: 1rem;
+    }
+
+    .form { 
+        padding: 2rem 1.5rem;
+    }
+
+    .form .item-list-radio .radio label {
+        font-size: .875rem;
+    }
+    
+    [type="radio"] {
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    [type="radio"]::before {
+        width: .5rem;
+        height: .5rem;
+    }
+
+    .item-others [type="text"] {
+        width: 10rem;
+    }
+
+    .item-others [type="number"] {
+        width: 5rem;
+    }
+
+    .item-others [type="text"]::placeholder, .item-others [type="number"]::placeholder {
+        font-size: .8rem;
+    }
+
+    .add-others {
+        width: 1.25rem;
+        height: 1.25rem;
+        font-size: 1.25rem;
+        margin-top: .5rem;
+    }
+
+    .calc {
+        width: 8rem;
+        height: 3rem;
+        font-size: .875rem;
+        letter-spacing: 1px;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+
+    footer img {
+        max-width: 4rem;
+    }
+    
+    footer .mkl p, a {
+        font-size: .5rem;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .header, main, .form, footer {
+        width: 15rem;
+    }
+
+    .item-others [type="text"] {
+        width: 6rem;
+    }
+
+    .item-others [type="number"] {
+        width: 5rem;
+    }
+
+    .item-others [type="text"]::placeholder, .item-others [type="number"]::placeholder {
+        font-size: .8rem;
+    }
+
+    footer img {
+        display: block;
+    }
+    
+    footer .mkl {
+        display: block;
+    }
 }
