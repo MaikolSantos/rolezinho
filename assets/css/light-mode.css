@@ -1,0 +1,35 @@
+body.light-mode {
+    background: var(--white);
+}
+
+p.light-mode,
+label.light-mode,
+a.light-mode,
+span.light-mode,
+input.light-mode {
+    color: var(--black);
+}
+
+.letters.light-mode {
+    fill: var(--black);
+}
+
+.form.light-mode {
+    background: var(--white-section);
+}
+
+[type="number"].light-mode {
+    background: var(--white);
+}
+
+.form .item-list-radio .radio label.light-mode{
+    color: var(--black);
+}
+
+[type="radio"].light-mode {
+    background: var(--white);
+}
+
+[type="text"].light-mode {
+    background: var(--white);
+}
