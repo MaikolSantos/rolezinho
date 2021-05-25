@@ -1,35 +1,35 @@
-body.light-mode {
-    background: var(--white);
+body.dark-mode {
+    background: var(--black);
 }
 
-p.light-mode,
-label.light-mode,
-a.light-mode,
-span.light-mode,
-input.light-mode {
-    color: var(--black);
+p.dark-mode,
+label.dark-mode,
+a.dark-mode,
+span.dark-mode,
+input.dark-mode {
+    color: var(--white);
 }
 
-.letters.light-mode {
-    fill: var(--black);
+.letters.dark-mode {
+    fill: var(--white);
 }
 
-.form.light-mode {
-    background: var(--white-section);
+.form.dark-mode {
+    background: var(--black-section);
 }
 
-[type="number"].light-mode {
-    background: var(--white);
+[type="number"].dark-mode {
+    background: var(--black);
 }
 
-.form .item-list-radio .radio label.light-mode{
-    color: var(--black);
+.form .item-list-radio .radio label.dark-mode{
+    color: var(--white);
 }
 
-[type="radio"].light-mode {
-    background: var(--white);
+[type="radio"].dark-mode {
+    background: var(--black);
 }
 
-[type="text"].light-mode {
-    background: var(--white);
+[type="text"].dark-mode {
+    background: var(--black);
 }
