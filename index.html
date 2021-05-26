@@ -43,85 +43,87 @@
         </div>
 
         <section class="form">
-            <div class="item-list" id="nb">
+            <div class="item-list">
                 <label for="number1">Número de Bares que quero ir :</label>
-                <input id="number1" class="number" type="number" min="0" placeholder="0">
+                <input id="number1" class="number" type="number" min="0" value="0">
             </div>
-            <div class="item-list-radio" id="nib">
+            <div class="item-list-radio">
                 <p>Nível dos Bares que quero ir :</p>
                 <div class="radio">
-                    <input id="nib1" type="radio" name="nib" checked>
+                    <input id="nib1" type="radio" name="nib" value="1.1" checked>
                     <label for="nib1">Litrão da Esquina</label>
                 </div>
                 <div class="radio">
-                    <input id="nib2" type="radio" name="nib">
+                    <input id="nib2" type="radio" name="nib" value="1.5">
                     <label for="nib2">Gim Tônica do Centro</label>
                 </div>
                 <div class="radio">
-                    <input id="nib3" type="radio" name="nib">
+                    <input id="nib3" type="radio" name="nib" value="2.2">
                     <label for="nib3">Rooftop</label>
                 </div>
             </div>
-            <div class="item-list" id="nba">
+            <div class="item-list">
                 <label for="number2">Número de Baladas que quero ir :</label>
-                <input id="number2" class="number" type="number" min="0" placeholder="0">
+                <input id="number2" class="number" type="number" min="0" value="0">
             </div>
-            <div class="item-list-radio" id="niba">
+            <div class="item-list-radio">
                 <p>Nível das Baladas que quero ir :</p>
                 <div class="radio">
-                    <input id="niba1" type="radio" name="niba" checked>
-                    <label for="niba1">Litrão da Esquina</label>
+                    <input id="niba1" type="radio" name="niba" value="2" checked>
+                    <label for="niba1">Padrão</label>
                 </div>
                 <div class="radio">
-                    <input id="niba2" type="radio" name="niba">
-                    <label for="niba2">Gim Tônica do Centro</label>
+                    <input id="niba2" type="radio" name="niba" value="3">
+                    <label for="niba2">Rei do Camarote</label>
                 </div>
             </div>
-            <div class="item-list-radio" id="nis">
+            <div class="item-list-radio">
                 <p>Nível de sede do rolê :</p>
                 <div class="radio">
-                    <input id="nis1" type="radio" name="nis" checked>
+                    <input id="nis1" type="radio" name="nis" value="1" checked>
                     <label for="nis1">Social</label>
                 </div>
                 <div class="radio">
-                    <input id="nis2" type="radio" name="nis">
+                    <input id="nis2" type="radio" name="nis" value="1.6">
                     <label for="nis2">Comemoração</label>
                 </div>
                 <div class="radio">
-                    <input id="nis3" type="radio" name="nis">
+                    <input id="nis3" type="radio" name="nis" value="2.5">
                     <label for="nis3">Esquecer Ex</label>
                 </div>
             </div>
-            <div class="item-list" id="km">
+            <div class="item-list">
                 <label for="number3">Quilômetros rodados de Uber :</label>
-                <input id="number2" class="number" type="number" min="0" placeholder="0">
+                <input id="number3" class="number" type="number" min="0" value="0">
             </div>
-            <div class="item-list-radio" id="d">
+            <div class="item-list-radio">
                 <p>Dia do Rolê :</p>
                 <div class="radio">
-                    <input id="d1" type="radio" name="d" checked>
+                    <input id="d1" type="radio" name="d" value="1" checked>
                     <label for="d1">Dia de Semana</label>
                 </div>
                 <div class="radio">
-                    <input id="d2" type="radio" name="d">
+                    <input id="d2" type="radio" name="d" value="1.4">
                     <label for="d2">Sexta</label>
                 </div>
                 <div class="radio">
-                    <input id="d3" type="radio" name="d">
+                    <input id="d3" type="radio" name="d" value="1.6">
                     <label for="d3">Sábado</label>
                 </div>
                 <div class="radio">
-                    <input id="d4" type="radio" name="d">
+                    <input id="d4" type="radio" name="d" value="1.2">
                     <label for="d4">Domingo</label>
                 </div>
             </div>
-            <div class="item-list" id="o">
+            <div class="item-list others">
                 <label for="outros">Outros gastos :</label>
                 <div class="item-others">
-                    <input type="text" placeholder="Ex.: Pão com ovo"> <span>:</span>
-                    <input type="number" min="0" placeholder="15,00">
+                    <input type="text" placeholder="Pão com ovo"> <span>:</span>
+                    <input type="number" min="0" placeholder="R$">
+                    <img class="trash" src="assets/img/trash.png" alt="Excluir item">
+                    <p>Para adicionar outros gastos preencha os valores vazios</p>
                 </div>
-                <button class="add-others">+</button>
+                <button class="add-other">+</button>
             </div>
 
             <button class="calc">Calcular Rolê</button>

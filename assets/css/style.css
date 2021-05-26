@@ -26,6 +26,16 @@ p, label, a, span, input {
 
 input {
     font-size: 1.125rem;
+    opacity: 0;
+    transform: translate3d(-20px, 0, 0);
+    animation: left-to-rigth .5s forwards;
+}
+
+@keyframes left-to-rigth {
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 
@@ -192,7 +202,55 @@ main {
     border: 1px solid transparent;
 }
 
-.add-others {
+/* .item-others {
+    display: none;
+} */
+
+.item-others {
+    margin-bottom: .5rem;
+}
+
+.item-others p {
+    display: none;
+}
+
+.item-others:nth-last-child(2) > p.error {
+    display: block;
+    margin-top: .3rem;
+    font-size: .6rem;
+    color: red;
+}
+
+.item-others:nth-last-child(2).error {
+    margin-bottom: .5rem;
+    border: 1px solid transparent;
+    animation: error .5s;
+}
+
+@keyframes error {
+    0% {
+        transform: translate(0px);
+    }
+    25% {
+        transform: translate(10px);
+        border: 1px solid red;
+    }
+    50% {
+        transform: translate(0px);
+    }
+    75% {
+        transform: translate(10px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+.item-others .trash {
+    
+}
+
+.add-other {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,22 +259,17 @@ main {
     border-radius: 50%;
     border: none;
     background: var(--primary-color);
-    color: var(--black);
+    color: var(--white);
     font-size: 2rem;
     cursor: pointer;
     outline: none;
-    margin-top: 1rem;
     transition: .2s ease-in-out;
 }
 
-
-.add-others:hover {
+.add-other:hover {
     background: var(--second-color);
 }
 
-/* .item-others {
-    display: none;
-} */
 
 .calc {
     display: block;
