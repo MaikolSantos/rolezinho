@@ -202,11 +202,8 @@ main {
     border: 1px solid transparent;
 }
 
-/* .item-others {
-    display: none;
-} */
-
 .item-others {
+    /* display: none; */
     margin-bottom: .5rem;
 }
 
@@ -247,7 +244,12 @@ main {
 }
 
 .item-others .trash {
-    
+    width: 13px;
+    cursor: pointer;
+}
+
+.item-others .trash:hover {
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .5));
 }
 
 .add-other {
@@ -410,7 +412,7 @@ footer .mkl p, a {
 
 @media screen and (max-width: 359px) {
     .header, main, .form, footer {
-        width: 15rem;
+        width: 16rem;
     }
 
     .item-others [type="text"] {
