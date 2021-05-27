@@ -1,5 +1,5 @@
 export default function initiCalutation() {
-    const calc = document.querySelector('.calc');
+    const calc = document.querySelector('.btn');
 
     calc.addEventListener('click', calculate)
 
@@ -37,7 +37,7 @@ export default function initiCalutation() {
         }
 
         const total = expensesBars() + expensesBallad() + expensesUber() + expensesOthers();
-        const result = total.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+        const result = total.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
         console.log(result)
 
     }

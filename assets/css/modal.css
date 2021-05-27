@@ -1,0 +1,70 @@
+.modal {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: var(--white);
+}
+
+.modal.active {
+    display: flex;
+}
+
+.arrow {
+    width: 40rem;
+    align-self: flex-start;
+    margin: 15px auto;
+}
+
+.arrow svg:hover {
+    cursor: pointer;
+}
+
+.arrow svg:hover path{
+    fill: var(--primary-color);
+}
+
+.result > p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 2.25;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.final-result {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.mensage > p {
+    font-family: 'Pattaya',Georgia, 'Times New Roman', Times, serif;
+    color: var(--second-color);
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    .arrow {
+        width: 30rem;
+    }
+    .final-result {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .arrow {
+        width: 18rem;
+    }
+}
+
