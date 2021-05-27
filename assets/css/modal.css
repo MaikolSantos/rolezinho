@@ -1,5 +1,5 @@
 .modal {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -12,9 +12,9 @@
     background-color: var(--white);
 }
 
-.modal.active {
+/* .modal.active {
     display: flex;
-}
+} */
 
 .arrow {
     width: 40rem;
