@@ -14,7 +14,7 @@ input.dark-mode {
     fill: var(--white);
 }
 
-.form.dark-mode {
+section.dark-mode {
     background: var(--black-section);
 }
 
@@ -32,4 +32,8 @@ input.dark-mode {
 
 [type="text"].dark-mode {
     background: var(--black);
+}
+
+.final-result.dark-mode {
+    color: var(--primary-color);
 }

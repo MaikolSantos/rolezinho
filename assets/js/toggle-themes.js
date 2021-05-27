@@ -1,6 +1,6 @@
 export default function initiToggleThemes() {
     const light = document.querySelector('.switch');
-    const elementsList = ['body', 'section', '.letters','input[type]', 'p', 'label', 'span']; 
+    const elementsList = ['body', 'section', '.letters','input[type]', 'p', 'label', 'span', '.final-result']; 
 
     if (light) {
         light.addEventListener('click', switchToggle);
