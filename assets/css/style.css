@@ -69,8 +69,16 @@ a:hover {
     filter: drop-shadow(1px 1px 5px var(--primary-color));
 }
 
+.header .switch svg path {
+    fill: var(--primary-color);
+}
+
 .header .switch.active {
     filter: none;
+}
+
+.header .switch.active svg path{
+    fill: gray;
 }
 
 main {
