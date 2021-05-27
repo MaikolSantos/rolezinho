@@ -32,7 +32,4 @@ export default function initAddOther() {
             this.parentElement.remove() 
         }
     }
-
-
-
 }
