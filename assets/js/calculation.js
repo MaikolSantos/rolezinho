@@ -1,5 +1,8 @@
 export default function initiCalutation() {
     const calc = document.querySelector('.btn');
+    const modal = document.querySelector('.modal');
+    const body = document.querySelector('body');
+    const finalResult = document.querySelector('.final-result');
 
     calc.addEventListener('click', calculate)
 
@@ -37,8 +40,13 @@ export default function initiCalutation() {
         }
 
         const total = expensesBars() + expensesBallad() + expensesUber() + expensesOthers();
-        const result = total.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
-        console.log(result)
+        const result = total.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'});
+
+        body.classList.add('active-modal');
+        modal.classList.add('active-modal');
+        finalResult.innerText = result;
 
     }
+
+
 }

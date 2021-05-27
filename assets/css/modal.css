@@ -1,8 +1,8 @@
 .modal {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -10,11 +10,25 @@
     top: 0;
     left: 0;
     background-color: var(--white);
+    transform: translate3d(0, -50px, 0);
+    opacity: 0;
+    animation: modal-down .5s forwards ;
 }
 
-/* .modal.active {
+@keyframes modal-down {
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+body.active-modal {
+    overflow: hidden;
+}
+
+.modal.active-modal {
     display: flex;
-} */
+}
 
 .arrow {
     width: 40rem;
@@ -66,10 +80,16 @@
 
 @media screen and (max-width:500px) {
     .final-result {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .arrow {
         width: 18rem;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .final-result {
+        font-size: 2rem;
     }
 }
 
