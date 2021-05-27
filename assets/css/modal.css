@@ -15,6 +15,10 @@
     animation: modal-down .5s forwards ;
 }
 
+.modal.active-modal {
+    display: flex;
+}
+
 @keyframes modal-down {
     to {
         transform: translate3d(0, 0, 0);
@@ -26,9 +30,6 @@ body.active-modal {
     overflow: hidden;
 }
 
-.modal.active-modal {
-    display: flex;
-}
 
 .arrow {
     width: 40rem;

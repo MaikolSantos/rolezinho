@@ -47,6 +47,4 @@ export default function initiCalutation() {
         finalResult.innerText = result;
 
     }
-
-
 }
