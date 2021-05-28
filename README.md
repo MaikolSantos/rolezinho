@@ -2,7 +2,7 @@
 
 # :pencil: Descrição
 
-**RoleZinho** é uma calculadora que auxila as pessoas nos seus rolês (geralamente passeio notunos à bares e baladas). Com essa calculadora as pessoas podem se programar para quanto irão gastar. Esse projeto foi proposto pela empresa [VExpenses](https://vexpenses.com.br/) durante um processo seletivo para uma vaga de estágiario Front-End.
+**RoleZinho** é uma calculadora que auxilia as pessoas nos seus rolês (geralmente passeio noturnos à bares e baladas). Com essa calculadora as pessoas podem se programar para quanto irão gastar. Esse projeto foi proposto pela empresa [VExpenses](https://vexpenses.com.br/) durante um processo seletivo para uma vaga de estagiário Front-End.
 
 #  :art: Layout (conceito)
 
