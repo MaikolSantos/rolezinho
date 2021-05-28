@@ -6,16 +6,21 @@ export default function initiCalutation() {
 
     calc.addEventListener('click', calculate)
 
+    function generatesNumbers(selector) {
+        const element = +document.querySelector(selector).value;
+        return element
+    }
+
     function calculate(event) {
         event.preventDefault();
- 
-        const nb = +document.querySelector('#number1').value;
-        const nib = +document.querySelector('input[name="nib"]:checked').value;
-        const nba = +document.querySelector('#number2').value;
-        const niba = +document.querySelector('input[name="niba"]:checked').value;
-        const nis = +document.querySelector('input[name="nis"]:checked').value;
-        const km = +document.querySelector('#number3').value;
-        const day = +document.querySelector('input[name="d"]:checked').value;
+
+        const nb = generatesNumbers('#number1');
+        const nib = generatesNumbers('input[name="nib"]:checked');
+        const nba = generatesNumbers('#number2');
+        const niba = generatesNumbers('input[name="niba"]:checked');
+        const nis = generatesNumbers('input[name="nis"]:checked');
+        const km = generatesNumbers('#number3');
+        const day = generatesNumbers('input[name="d"]:checked');
         const others = document.querySelectorAll('input[name="other"]');
         
         function expensesBars() {
